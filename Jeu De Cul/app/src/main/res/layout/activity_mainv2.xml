@@ -27,12 +27,33 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/p1"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Joueur 1" />
+            <EditText
+                android:id="@+id/p2"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Joueur 2"/>
+
+        </LinearLayout>
+
         <Button
             android:id="@+id/btnEnter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:text="C'est parti !"
+            android:textSize="20sp"
+            android:visibility="visible"
             app:backgroundTint="#169DDC" />
 
     </LinearLayout>
@@ -42,6 +63,14 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btnInfos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:backgroundTint="#5ECCFF"
+            android:text="Plus d'Infos"/>
 
         <TextView
             android:layout_width="wrap_content"
