@@ -2,31 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center">
 
     <TextView
         android:id="@+id/popTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:textSize="40dp"
-        android:text="Tite"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="10dp"/>
+        android:text="Tite"/>
 
     <TextView
         android:id="@+id/popSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="10dp"
         android:textSize="20dp"
-        android:text="Paragraphe"
-        android:layout_marginLeft="10dp"/>
+        android:text="Paragraphe"/>
 
     <Button
+        android:id="@+id/popOkay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:layout_margin="10dp"
+        android:layout_margin="15dp"
         android:text="Okay"
-        app:backgroundTint="#0BB3DD" />
+        app:backgroundTint="#FF9800" />
 
 </LinearLayout>

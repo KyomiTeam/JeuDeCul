@@ -37,14 +37,22 @@
                 android:id="@+id/p1"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
-                android:text="Joueur 1" />
+                android:text="Garçon" />
             <EditText
                 android:id="@+id/p2"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
-                android:text="Joueur 2"/>
+                android:text="Fille"/>
 
         </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="/!\\ Selon la case où vous entrerez votre nom/pseudo\nle jeu vous verra comme un garçon ou une fille !"
+            android:textAlignment="center"
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/btnEnter"
