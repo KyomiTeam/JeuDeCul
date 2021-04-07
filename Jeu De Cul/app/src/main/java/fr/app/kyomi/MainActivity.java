@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private AppUpdateManager mAppUpdateManager;
     private static final int RC_APP_UPDATE = 100;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
                 customPopup.build();
             }
         });
-
 
 
         // Update
@@ -136,5 +136,13 @@ public class MainActivity extends AppCompatActivity {
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
+
+    // FireBase
+    
+
 }
+
+
+
+
 
