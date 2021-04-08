@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     public static EditText p1;
     public static EditText p2;
     private MainActivity activity;
+    private  Button login, register;
 
     // Auto Updater
     private AppUpdateManager mAppUpdateManager;
@@ -101,6 +102,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         mAppUpdateManager.registerListener(installStateUpdatedListener);
+
+
+        // Login / register
+        login = findViewById(R.id.login);
+        register = findViewById(R.id.register);
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
+            }
+        });
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, RegisterActivity.class));
+            }
+        });
+
     }
 
     private InstallStateUpdatedListener installStateUpdatedListener = new InstallStateUpdatedListener() {
